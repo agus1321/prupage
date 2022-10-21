@@ -1,0 +1,85 @@
+.aca{
+    text-align: right;
+    margin-left: 66.5%;
+}
+
+.homedes2 {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.butt_on{
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    border-style: groove;
+    border-width: 2px;
+    border-color: white;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.butt_on:hover {
+    background-color: #25845c;
+    color: rgb(255, 255, 255);
+}
+
+.button_in{
+    margin-left: 2rem;
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    border-style: groove;
+    border-width: 2px;
+    border-color: white;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.button_in:hover {
+    background-color: #843225;
+    color: rgb(255, 255, 255);
+}
+
+.homebuta a {
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 995px) {
+    .aca{
+        text-align: right;
+        margin-left: 57%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .aca{
+        text-align: right;
+        margin-left: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aca{
+        text-align: right;
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aca{
+        text-align: right;
+        margin-left: 2%;
+    }
+
+    .homet {
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 109%;
+        margin-bottom: 1rem;
+    }
+}

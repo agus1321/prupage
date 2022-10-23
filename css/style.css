@@ -3,8 +3,24 @@
     --naranja: #f9580e;
 }
 
+[data-theme="light"] {
+    --boton: invert(0%);
+    --invertido: invert(100%);
+    --NOinvertido: invert(100%);
+}
+
+[data-theme="dark"] {
+    --boton: invert(100%);
+    --invertido: invert(0);
+    --NOinvertido: invert(0%);
+}
+
 .naranja {
     color: var(--naranja);
+}
+
+.BtnDarkLight {
+    filter: var(--boton);
 }
 
 * {
@@ -15,53 +31,52 @@
 
 html {
     scroll-behavior: smooth;
-    filter: invert(0);
+    filter: var(--NOinvertido);
     transition: 1s;
 }
 
+.noDark {
+    filter: var(--invertido) !important;
+}
+
 html.dark-mode {
-    filter: invert(100%)
+    filter: var(--invertido);
 }
 
 .dark-mode-button {
-    filter: invert(100%);
+    filter: var(--invertido);
     width: 35px;
     margin-top: 9px;
 }
 
 html.dark-mode img {
     transition: 1s;
-    filter: invert(100%)
+    filter: var(--invertido);
 }
 
 html.dark-mode .butt_on:hover {
     transition: 1s;
-    filter: invert(100%);
+    filter: var(--invertido);
 }
 
 html.dark-mode .button_in:hover {
     transition: 1s;
-    filter: invert(100%)
+    filter: var(--invertido);
 }
 
-html.dark-mode #noDark {
+html.dark-mode .fondoPro {
     transition: 1s;
-    filter: invert(0)
+    filter: var(--invertido);
 }
 
-html.dark-mode .fondoPro{
+html.dark-mode .fondoPro font {
     transition: 1s;
-    filter: invert(1)
-}
-
-html.dark-mode .fondoPro font{
-    transition: 1s;
-    filter: invert(1)
+    filter: var(--invertido);
 }
 
 html.dark-mode .fondoPro img {
     transition: 1s;
-    filter: invert(0)
+    filter: var(--invertido);
 }
 
 body {
@@ -723,8 +738,9 @@ h3 {
 .ftrli:hover {
     color: #d93b00;
 }
-.fondoPro{
-    background-image:linear-gradient(90deg,rgb(66, 65, 65,0.3) ,rgb(0, 0, 0,0.8) 50%),url(../img/programacion.jpg) ;
+
+.fondoPro {
+    background-image: linear-gradient(90deg, rgb(66, 65, 65, 0.3), rgb(0, 0, 0, 0.8) 50%), url(../img/programacion.jpg);
     background-attachment: fixed;
 }
 
@@ -938,8 +954,6 @@ h3 {
     .dscont {
         column-gap: 7rem;
     }
-  
-
     .newcontent {
         width: 310px;
         border-radius: 1rem;
@@ -982,24 +996,60 @@ h3 {
         margin-top: -50px;
     }
     .Formulario {
-        margin-bottom:40px ;
+        margin-bottom: 40px;
     }
-    .contactos{
-        margin-top:50px;
-        
+    .contactos {
+        margin-top: 50px;
     }
-    .dscont{
+    .dscont {
         padding: 25px 5px;
     }
-    .fondoPro img{
+    .fondoPro img {
         display: none;
     }
-    .fondoPro{
-        background-image:linear-gradient(90deg,rgba(0, 0, 0, 0.9) ,rgb(0, 0, 0,0.6) 50%),url(../img/programacion.jpg) ;
+    .fondoPro {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgb(0, 0, 0, 0.6) 50%), url(../img/programacion.jpg);
         border-radius: 0;
         width: 100%;
         margin: 0;
-     
     }
+}
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
 }

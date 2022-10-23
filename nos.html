@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -42,9 +42,9 @@
                     <li class="navItem">
                         <a href="contact.html" class="navLink">Contacto</a>
                     </li>
-                    <label for="dark-mode" class="dark-mode-button">
-                        <input style="display: none;" type="checkbox" id="dark-mode" onclick="document.documentElement.classList.toggle('dark-mode')">
-                        <img src="img/ModoNoche.png" id="noDark" alt="" srcset="">
+                    <label class="dark-mode-button ">
+                        <input type="checkbox" style="opacity: 0;"  class="BtnDarkLight slider "  id="slider" checked>
+                        <span style="cursor:pointer;"><img class="BtnDarkLight" src="img/ModoNoche.png" alt=""></span>
                     </label>
                 </ul>
 
@@ -205,6 +205,7 @@
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/darkMode.js"></script>
 </body>
 
 </html>

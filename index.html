@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
 
         <nav class="nav container">
             <a href="#" class="navL">
-                <img src="img/LOGO.png" id="noDark" alt="" class="navL-img">
+                <img src="img/LOGO.png" alt="" class="navL-img ">
                 <b>PRU-FEX</b>
             </a>
 
@@ -42,10 +42,13 @@
                     <li class="navItem">
                         <a href="contact.html" class="navLink">Contacto</a>
                     </li>
-                    <label for="dark-mode" class="dark-mode-button">
-                        <input style="display: none;" type="checkbox" id="dark-mode" onclick="document.documentElement.classList.toggle('dark-mode')">
-                        <img src="img/ModoNoche.png" id="noDark" alt="" srcset="">
+                    <label class="dark-mode-button ">
+                        <input type="checkbox" style="opacity: 0;"  class="BtnDarkLight slider "  id="slider" checked>
+                        <span style="cursor:pointer;"><img class="BtnDarkLight" src="img/ModoNoche.png" alt=""></span>
                     </label>
+
+
+
                 </ul>
 
                 <div class="navClose" id="nav-close">
@@ -82,13 +85,10 @@
                                 <div class="homebut">
                                     <a href="#about" class="button">Nosotros</a>
                                     <a href="#new" class="button">Portafolio</a>
-
-
                                 </div>
-
                             </div>
                             <div class="homeg">
-                                <img src="img/LOGO CON LETRAS 3.png" alt="PRUFEX PRU-FEX LOGO" srcset="" id="noDark">
+                                <img src="img/LOGO CON LETRAS 3.png" alt="PRUFEX PRU-FEX LOGO" srcset="" class="">
                             </div>
 
                         </div>
@@ -107,31 +107,31 @@
             <div class="catcontainer container grid">
 
                 <div class="catdata">
-                    <img src="img/categoria1.png" id="noDark" class="catimg" alt="" >
-                    <h3 class="cattitle naranja " >Programas Web</h3>
+                    <img src="img/categoria1.png" class="catimg " alt="">
+                    <h3 class="cattitle naranja ">Programas Web</h3>
                     <p class="catdes" style="margin-bottom:22px;"> Creamos programas webs a la medida del consumidor.</p>
                 </div>
 
                 <div class="catdata">
-                    <img src="img/categoria2.png" id="noDark" class="catimg" alt="">
+                    <img src="img/categoria2.png" class="catimg " alt="">
                     <h3 class="cattitle naranja">Diseño Web</h3>
                     <p class="catdes"> Diseñamos tu pagina web a la medida y con un diseño adaptado a todo dispositivo.</p>
                 </div>
 
                 <div class="catdata">
-                    <img src="img/categoria3.png" id="noDark" class="catimg" alt="">
+                    <img src="img/categoria3.png" class="catimg " alt="">
                     <h3 class="cattitle naranja">Aplicaciones Android</h3>
                     <p class="catdes"> Creamos una aplicacion android a tu medida, teniendo en cuenta tus necesidades y gustos.</p>
                 </div>
 
-                
+
             </div>
         </section>
 
         <!--About-->
         <section class="section about" id="about">
             <div class="abcontainer container grid">
-                <img src="img/Proyecto nuevo.png" class="aboutimg" id="noDark" alt="">
+                <img src="img/Proyecto nuevo.png" class="aboutimg " alt="">
                 <div class="abdata">
                     <h2 class="stitle abti">¿Quienes
                         <font class="naranja">Somos</font>?</h2>
@@ -151,7 +151,7 @@
             <div class="pdcontainer container grid">
 
                 <div class="pdcontent">
-                    <img src="img/equipo/fiasche.PNG" style="border-radius: 5px;" class="productimg" alt="">
+                    <img src="img/equipo/fiasche.PNG" id="noDark" style="border-radius: 5px;" class="productimg noDark" alt="">
                     <h3 class="pdtitle"> <b>Agustin Fiasche</b></h3>
                     <span class="pdsub"> Scrum Master</span>
                     <span class="pdprice"> <font class="naranja"><b>Socio Director</b></font></span>
@@ -163,7 +163,7 @@
                 </div>
 
                 <div class="pdcontent">
-                    <img src="img/equipo/vector-sign-of-user-icon.webp" style="border-radius: 5px;" class="productimg" alt="">
+                    <img src="img/equipo/vector-sign-of-user-icon.webp" style="border-radius: 5px;" class="productimg noDark" alt="">
                     <h3 class="pdtitle"> <b>Esteban Jumilla</b></h3>
                     <span class="pdsub"> Finanzas</span>
                     <span class="pdprice"><font class="naranja"><b> Socio</b></font></span>
@@ -175,7 +175,7 @@
                 </div>
 
                 <div class="pdcontent">
-                    <img src="img/equipo/brian.png" style="border-radius: 5px;" class="productimg" alt="">
+                    <img src="img/equipo/brian.png" style="border-radius: 5px;" class="productimg noDark" alt="">
                     <h3 class="pdtitle"> <b>Brian Farfan</b></h3>
                     <span class="pdsub"> FrontEnd</span>
                     <span class="pdprice"><font class="naranja"><b> Programador</b></font></span>
@@ -187,7 +187,7 @@
                 </div>
 
                 <div class="pdcontent">
-                    <img src="img/equipo/vector-sign-of-user-icon.webp" style="border-radius: 5px;" class="productimg" alt="">
+                    <img src="img/equipo/vector-sign-of-user-icon.webp" style="border-radius: 5px;" class="productimg " alt="">
                     <h3 class="pdtitle"> <b>Danilo Soler</b></h3>
                     <span class="pdsub"> BackEnd</span>
                     <span class="pdprice"><font class="naranja"><b> Programador</b></font></span>
@@ -212,17 +212,17 @@
 
 
         <!--Discount-->
-        <section class="section discount"  >
+        <section class="section discount">
 
-        <div class="dscont container grid fondoPro " id="ESTENO" >
+            <div class="dscont container grid fondoPro noDark" id="ESTENO">
 
                 <div align="center" style="padding: 20px;">
                     <h2 class="distitle">Consulta por tu <br>
-                        <font class="naranja" >pagina web.</font>
+                        <font class="naranja noDark">pagina web.</font>
                     </h2>
                     <a href="contact.html" class="button">Contactar</a>
                 </div>
-                <img src="img/grafchac.PNG" style="border-radius: 10px; padding: 10px;" class="disimg" alt="" >
+                <img src="img/grafchac.PNG" style="border-radius: 10px; padding: 10px;" class="disimg" alt="">
 
             </div>
 
@@ -235,22 +235,23 @@
             </h2>
 
             <div class="newcont container">
+
                 <div class="swiper new-swiper">
                     <div class="swiper-wrapper">
 
                         <div class="newcontent swiper-slide">
                             <div class="newtag">#2</div>
-                            <img src="img/gcm.png" class="newimg" alt="">
+                            <img src="img/gcm.png" class="newimg noDark" alt="">
                             <h3 class="newti">GCM | BROKER DE SEGUROS</h3>
                             <span class="newsub">Pagina Web</span>
                             <div class="newps">
-                                <a href="https://www.gcmseguros.com.ar" target="_blank" class="newpri">Visitar Sitio Web</a>
+                                <a href="https://www.gcmseguros.com.ar" target="_blank" class="newpri ">Visitar Sitio Web</a>
                             </div>
                             </button>
                         </div>
                         <div class="newcontent swiper-slide">
                             <div class="newtag">#1</div>
-                            <img src="img/chacabuco.png" class="newimg" alt="">
+                            <img src="img/chacabuco.png" class="newimg noDark" alt="">
                             <h3 class="newti">GRAFICA CHACABUCO S.R.L.</h3>
                             <span class="newsub">Pagina Web</span>
                             <div class="newps">
@@ -260,7 +261,7 @@
                         </div>
                         <div class="newcontent swiper-slide">
                             <div class="newtag">#3</div>
-                            <img src="img/logo stone (1).png" class="newimg" alt="">
+                            <img src="img/logo stone (1).png" class="newimg noDark" alt="">
                             <h3 class="newti">PROYECTO STONE</h3>
                             <span class="newsub">Programa Web</span>
                             <div class="newps">
@@ -289,7 +290,7 @@
             <div class="ftcontent">
 
                 <div class="footerL borderFooter">
-                    <img src="img/LOGO.png" id="noDark" class="footerL-img" alt=""> <b> PRU-FEX</b>
+                    <img src="img/LOGO.png" class="footerL-img" alt=""> <b> PRU-FEX</b>
                 </div>
 
                 <p class="footerdescription">Empresa destinada al diseño y programacion de paginas y programas web, aplicaciones android, tiendas, entre otras.</p>
@@ -383,6 +384,7 @@
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/darkMode.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="algo.css">
+
 </head>
 
 <body>
@@ -40,9 +41,10 @@
                     </li>
                     <li class="navItem">
                         <a href="contact.html" class="navLink active-link">Contacto</a>
-                    </li> <label for="dark-mode" class="dark-mode-button">
-                        <input style="display: none;" type="checkbox" id="dark-mode" onclick="document.documentElement.classList.toggle('dark-mode')">
-                        <img src="img/ModoNoche.png" id="noDark" alt="" srcset="">
+                    </li>
+                    <label class="dark-mode-button ">
+                        <input type="checkbox" style="opacity: 0;"  class="BtnDarkLight slider "  id="slider" checked>
+                        <span style="cursor:pointer;"><img class="BtnDarkLight" src="img/ModoNoche.png" alt=""></span>
                     </label>
                 </ul>
 
@@ -119,18 +121,18 @@
 
                             <div class="from-input">
                                 <label for="FormMensaje">Mensaje</label>
-                                <textarea type="textarea"  name="msg" id="msg" placeholder="Mensaje..."></textarea>
+                                <textarea type="textarea" name="msg" id="msg" placeholder="Mensaje..."></textarea>
                             </div>
                             <div class="from-input">
                                 <label for="FormEmail">Telefono</label>
                                 <input type="int" id="telefono" name="telefono" placeholder="+54 9 1138949280">
                             </div>
                     </form>
-                    
-                        <center>
 
-                            <button type="submit" value="Send Email" id="button" class="Enviar"> Enviar</button>
-                        </center>
+                    <center>
+
+                        <button type="submit" value="Send Email" id="button" class="Enviar"> Enviar</button>
+                    </center>
                     </div>
                 </div>
             </section>
@@ -142,42 +144,40 @@
         <i class="bx bx-up-arrow-alt scrollupicon"></i>
     </a>
 
-    <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script type="text/javascript">
-    emailjs.init('K16a0CcpbT6MK2tYB')
+        emailjs.init('K16a0CcpbT6MK2tYB')
     </script>
 
     <script>
-
         const btn = document.getElementById('button');
 
         document.getElementById('form')
-        .addEventListener('submit', function(event) {
-        event.preventDefault();
+            .addEventListener('submit', function(event) {
+                event.preventDefault();
 
-        btn.value = 'Enviando...';
+                btn.value = 'Enviando...';
 
-        const serviceID = 'default_service';
-        const templateID = 'template_hogjrcq';
+                const serviceID = 'default_service';
+                const templateID = 'template_hogjrcq';
 
-        emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-            btn.value = 'Send Email';
-            alert('Enviado Correctamente!!!');
-            }, (err) => {
-            btn.value = 'Send Email';
-            alert(JSON.stringify(err));
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('Enviado Correctamente!!!');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
             });
-        });
-
     </script>
 
 
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/darkMode.js"></script>
 </body>
 
 </html>

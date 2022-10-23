@@ -7,12 +7,17 @@
     --boton: invert(0%);
     --invertido: invert(100%);
     --NOinvertido: invert(100%);
+    --fondoScroll: rgb(232, 232, 232);
+    --scroll: rgb(167, 167, 167);
 }
 
 [data-theme="dark"] {
     --boton: invert(100%);
     --invertido: invert(0);
     --NOinvertido: invert(0%);
+    --fondoScroll: rgba(23, 23, 32);
+    --scroll: #272525;
+    ;
 }
 
 .naranja {
@@ -744,6 +749,11 @@ h3 {
     background-attachment: fixed;
 }
 
+.fondoPro2 {
+    background-image: linear-gradient(90deg, rgb(66, 65, 65, 0.9), rgb(0, 0, 0, 0.8) 50%), url(../img/programacion.jpg);
+    background-attachment: fixed;
+}
+
 .footercopy {
     display: block;
     text-align: center;
@@ -779,11 +789,13 @@ h3 {
 }
 
 ::-webkit-scrollbar {
+    background-color: var(--fondoScroll);
     width: 0.6rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #272525;
+    background: var(--scroll);
+    filter: invert(100%);
     border-radius: .5rem;
 }
 

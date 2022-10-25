@@ -341,7 +341,7 @@ button {
     left: 45%;
     width: 5px;
     height: 5px;
-    background-color: #fff;
+    background-color: var(--naranja);
     border-radius: 50%;
 }
 
@@ -587,11 +587,11 @@ h3 {
 
 .newpri {
     font-weight: 500;
-    color: #fff;
+    color: var(--naranja);
 }
 
 .newdis {
-    color: var( --naranja);
+    color: #ffffff73;
     font-size: .75rem;
     text-decoration: line-through;
     font-weight: 500;

@@ -101,25 +101,28 @@
         margin-bottom: 2rem;
         text-align: center;
     }
-
-    #af{
+    
+    #af {
         margin-top: -5rem;
     }
     
-    #bf{
+    #bf {
         margin-top: -5rem;
         display: none;
     }
     
-    #ds{
+    #ds {
         margin-top: -5rem;
         display: none;
     }
-
-    #imgFias{
+    
+    #imgFias {
         box-shadow: 0px 0px 10px var(--btnPort);
         opacity: 1;
+        background-color: var(--btnPort);
     }
+    /**/
+    
     .container {
         max-width: 968px;
         margin: 0 1.5rem;
@@ -1010,6 +1013,62 @@
     
     .portafolioActivado {
         background-color: #0c0b0b;
+    }
+    
+    .NavPorta {
+        background-image: linear-gradient(90deg, rgb(66, 65, 65, 0.9), rgb(0, 0, 0, 0.9) 50%), url(../img/programacion.jpg);
+        background-attachment: fixed;
+        filter: var(--invertido);
+    }
+    
+    .portaGente {
+        margin: 0 50px;
+    }
+    
+    .tituloPorta {
+        font-size: 2.5rem;
+    }
+    
+    .subTituloPorta {
+        font-size: 1.5rem;
+        color: gray;
+    }
+    
+    .etiquetasLenguajes {
+        display: flex;
+    }
+    
+    .etiquetasLenguajes p {
+        background-color: #474747;
+        width: 100px;
+        border-radius: 50px;
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+    
+    .Cartelera {
+        margin-top: 50px;
+    }
+    
+    .botonPORTA {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgb(0, 0, 0, 0.85) 50%), url(../img/programacion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        width: 35%;
+        height: 300px;
+        color: white;
+        margin: 20px;
+        border-radius: 20px;
+    }
+    
+    .botonPORTA:hover {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgb(0, 0, 0, 0.85) 50%), url(../img/programacion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
     }
     /*FIN DE PORTAFOLIO*/
     /*---------------------------------------------------------------------------------------------------*/

@@ -821,7 +821,7 @@
         }
     }
     
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
         body {
             margin: 0;
         }
@@ -1055,7 +1055,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: fhref="#"ixed;
         width: 35%;
         height: 300px;
         color: white;
@@ -1074,7 +1074,7 @@
     /*---------------------------------------------------------------------------------------------------*/
     /* MEDIAS CON MAX */
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         .homet {
             margin-top: 1.5rem;
         }

@@ -101,7 +101,25 @@
         margin-bottom: 2rem;
         text-align: center;
     }
+
+    #af{
+        margin-top: -5rem;
+    }
     
+    #bf{
+        margin-top: -5rem;
+        display: none;
+    }
+    
+    #ds{
+        margin-top: -5rem;
+        display: none;
+    }
+
+    #imgFias{
+        box-shadow: 0px 0px 10px var(--btnPort);
+        opacity: 1;
+    }
     .container {
         max-width: 968px;
         margin: 0 1.5rem;
@@ -976,7 +994,7 @@
     }
     
     .botonPort img:hover {
-        transition: 0.5s;
+        transition: 0.45s;
         opacity: 1;
         width: 80px;
         height: 80px;

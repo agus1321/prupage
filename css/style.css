@@ -10,9 +10,11 @@
         --fondoScroll: rgb(232, 232, 232);
         --scroll: rgb(167, 167, 167);
         --btnPort: rgb(6, 167, 241);
+        --portgrad:rgba(6, 167, 241, 0.5);
     }
     
     [data-theme="dark"] {
+        --portgrad:rgba(249, 88, 14, 0.5);
         --boton: invert(100%);
         --invertido: invert(0);
         --NOinvertido: invert(0%);
@@ -1019,6 +1021,7 @@
         background-image: linear-gradient(90deg, rgb(66, 65, 65, 0.9), rgb(0, 0, 0, 0.9) 50%), url(../img/programacion.jpg);
         background-attachment: fixed;
         filter: var(--invertido);
+        padding: 10px;
     }
     
     .portaGente {
@@ -1026,6 +1029,7 @@
     }
     
     .tituloPorta {
+        margin-top: 1rem;
         font-size: 2.5rem;
     }
     
@@ -1044,33 +1048,199 @@
         border-radius: 50px;
         margin-top: 15px;
         margin-right: 20px;
+        transition: 0.3s;
     }
-    
+    .etiquetasLenguajes :hover{
+        transform: translateY(-.2rem);
+    }
     .Cartelera {
         margin-top: 50px;
     }
     
+/*IMAGENES DE FOINDO DEL PORTAFOLIO*/
+    .portaChacabuco{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/grafchac.PNG);
+    }
+    .portaSTONE{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/logo\ stone\ \(1\).png);
+    }
+
+    .portaGCMSEGUROS{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/GCMportafolio.jpg);
+    }
+    .portaLantern{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaLantern.PNG);
+    }
+    .portaDiscord{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaDiscord.PNG);
+    }
+    .portaDashboard{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaDashboard.PNG);
+    }
+    .portaCrispy{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaCrispy.PNG);
+    }
+ /* FIN DE IMAGENES DE FOINDO DEL PORTAFOLIO*/
     .botonPORTA {
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgb(0, 0, 0, 0.85) 50%), url(../img/programacion.jpg);
+        background-color: ;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        width: 35%;
-        height: 300px;
+        width: 25%;
+        transition: 0.5s;
+        height: 200px;
         color: white;
         margin: 20px;
         border-radius: 20px;
     }
-    
+    .botonPORTA p{
+        background-color: rgb(0, 0, 0,0.7);
+        padding: 5px 0;
+    }
     .botonPORTA:hover {
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgb(0, 0, 0, 0.85) 50%), url(../img/programacion.jpg);
+        box-shadow: 0px 0px 20px black;
+        transform: scale(1.05);
+        transition: 0.5s;
+        color: var(--btnPort);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
     }
+    
     /*FIN DE PORTAFOLIO*/
+    /*---------------------------------------------------------------------------------------------------*/
+    /* MEDIAS CON MAX PORTAFOLIO */
+
+    
+
+    @media screen and (max-width: 823px){
+        .botonPORTA {
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            width: 35%;
+            height: 200px;
+            color: white;
+            margin: 20px;
+            border-radius: 20px;
+        }
+        
+        
+    }
+
+    @media screen and (max-width: 615px){
+        .botonPORTA {
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            width: 85%;
+            height: 200px;
+            color: white;
+            margin: 20px;
+            border-radius: 20px;
+        }
+        
+        
+    }
+
+    @media screen and (max-width: 581px){
+        .etiquetasLenguajes p {
+            background-color: #474747;
+            font-size: 12px;
+            width: 100px;
+            border-radius: 50px;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+        
+    }
+
+    @media screen and (max-width: 513px){
+        .etiquetasLenguajes p {
+            background-color: #474747;
+            font-size: 12px;
+            width: 200px;
+            border-radius: 50px;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+        
+    }
+
+    @media screen and (max-width: 453px){
+        .etiquetasLenguajes p {
+            background-color: #474747;
+            font-size: 12px;
+            width: 200px;
+            border-radius: 50px;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+
+        .botonPORTA {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgb(0, 0, 0, 0.85) 50%), url(../img/programacion.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            width: 100%;
+            height: 200px;
+            color: white;
+            margin-bottom: 20px;
+            margin-left: -1px;
+            border-radius: 20px;
+        }
+        
+    }
+
+
+    @media screen and (max-width: 453px){
+        .tituloPorta {
+            font-size: 2.1rem;
+        }
+        
+        .subTituloPorta {
+            font-size: 1.2rem;
+            color: gray;
+        }
+        
+        
+    }
+
+    @media screen and (max-width: 395px){
+        .tituloPorta {
+            margin-left: -2rem;
+            font-size: 1.4rem;
+        }
+        
+        .subTituloPorta {
+            margin-left: -2rem;
+            font-size: 1rem;
+            color: gray;
+        }
+        
+        .etiquetasLenguajes {
+            display: flex;
+            margin-left: -2rem;
+        }
+        
+        .etiquetasLenguajes p {
+            background-color: #474747;
+            width: 100px;
+            border-radius: 50px;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+        
+    }
+
+    /* FIN MEDIAS CON MAX PORTAFOLIO*/
     /*---------------------------------------------------------------------------------------------------*/
     /* MEDIAS CON MAX */
     

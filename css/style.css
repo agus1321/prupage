@@ -239,10 +239,12 @@
         font-family: 'Poppins', sans-serif;
         padding: 10px;
         color: white;
+        border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.4);
     }
     
     .from-input textarea {
+        border: none;
         margin-top: 5px;
         width: 100%;
         height: 100px;
@@ -251,6 +253,7 @@
         padding: 10px;
         color: white;
         background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
     }
     
     .Enviar {
@@ -259,10 +262,12 @@
         padding: 5px;
         width: 60%;
         transition: 0.3s;
+        border-radius: 10px;
     }
     
     .Enviar:hover {
         color: var(--naranja);
+        transform: scale(1.05);
     }
     /*-----------------------*/
     
@@ -1018,7 +1023,7 @@
     }
     
     .NavPorta {
-        background-image: linear-gradient(90deg, rgb(66, 65, 65, 0.9), rgb(0, 0, 0, 0.9) 50%), url(../img/programacion.jpg);
+        background-image: linear-gradient(90deg, rgb(66, 65, 65, 0.9), rgb(0, 0, 0, 0.85) 50%), url(../img/programacion.jpg);
         background-attachment: fixed;
         filter: var(--invertido);
         padding: 10px;
@@ -1219,6 +1224,7 @@
         color: #fff;
         border-radius: 50px;
         padding: 5px 10px;
+        margin-top: 50px;
     }
     
     .modal-button:hover {

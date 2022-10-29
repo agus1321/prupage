@@ -15,9 +15,7 @@
 </head>
 
 <body>
-
     <header class="header" id="header">
-
         <nav class="nav container">
             <a href="index.html" class="navL">
                 <img src="img/LOGO.png" alt="LOGO PRUFREX PRU FEX DESARROLLO WEB PAGINA WEB PRUFEX LOGO PRU FEX Pru fex prufex Pru-Fex" class="navL-img ">
@@ -55,9 +53,9 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main content-enfocado">
 
-        <div class="swiper home-swiper">
+        <div class="swiper home-swiper desenfoque">
             <!--Home-->
             <section class="home container contactoCont" id="home">
                 <div class="homecont grid">
@@ -123,7 +121,7 @@
                             </div>
                     </form>
                     <center>
-                        <button type="submit" value="Send Email" id="button" class="Enviar"> Enviar</button>
+                        <button type="submit" value="Send Email" id="button" class='Enviar'> Enviar</button>
                     </center>
                     </div>
                 </div>
@@ -148,14 +146,16 @@
                 event.preventDefault();
 
                 btn.value = 'Enviando...';
-
+                const contentWrapper = document.querySelector('.content-enfocado');
+                const modalWrapper = document.querySelector('.modal-CardAlerta');
+                const modalButtons = document.querySelectorAll('.Enviar');
                 const serviceID = 'default_service';
                 const templateID = 'template_hogjrcq';
-
                 emailjs.sendForm(serviceID, templateID, this)
                     .then(() => {
+                        contentWrapper.classList.toggle('modal--active');
+                        modalWrapper.classList.toggle('modal--active');
                         btn.value = 'Send Email';
-                        alert('Enviado Correctamente!!!');
                     }, (err) => {
                         btn.value = 'Send Email';
                         alert(JSON.stringify(err));
@@ -168,6 +168,21 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/darkMode.js"></script>
+    <!--MODAL-->
+    <div class='modal-CardAlerta' id="Modalote">
+        <div class='modal' align="center">
+            <h2 class='modal-title naranja'>ENVIADO!</h2>
+            <div class='modal-content' style="margin-top: 10px;">
+                <p style="margin-top:10px ;">Tu mensaje ha sido enviado correctamente. :D</p>
+                <p style="margin-top: 10px;">Pronto recibiras un mail en tu correo donde podremos estar en contacto.</p>
+            </div>
+            <button class='modal-button' onclick="location.reload()">
+                Aceptar
+            </button>
+        </div>
+        <!-- partial -->
+
+    </div>
 </body>
 
 </html>

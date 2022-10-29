@@ -62,8 +62,8 @@
 
     </header>
 
-    <main class="main">
-        <div class="swiper home-swiper">
+    <main class="main  content-enfocado ">
+        <div class="swiper home-swiper desenfoque">
             <!--NOSOTROS-->
             <br>
             <section id="sq" class="section">
@@ -120,7 +120,7 @@
                                         <button type="button" role="link" onclick="window.location='http://graficachacabuco.com.ar';" class="botonPORTA noDark portaChacabuco">
                                         <p>GRAFICA CHACABUCO</p>
                                     </button>
-                                        <button type="button" role="link" onclick="alert('SIN SITIO OFICIAL..');" class="botonPORTA noDark portaSTONE">
+                                        <button class='buttonModal modal-card  botonPORTA noDark portaSTONE'> 
                                         <p> PROYECTO STONE</p>
                                     </button>
                                         <button type="button" role="link" onclick="window.location='http://linterneff.prufex.ga';" class="botonPORTA noDark portaLantern">
@@ -143,7 +143,7 @@
                                     </button>
                                     </center>
                                 </div>
-                            </div>
+
 
                         </section>
                         <!--------------------------------------------------PORTAFOLIO 2------------------------------------------------------->
@@ -171,6 +171,7 @@
                                 <!--TRABAJOS-->
                                 <div class="Cartelera">
                                     <center>
+
                                         <button type="button" role="link" onclick="window.location='https://prufex.com.ar';" class="botonPORTA noDark portaPrufex">
                                             <p>PRUFEX</p>
                                         </button>
@@ -186,16 +187,16 @@
                                         <button type="button" role="link" onclick="window.location='https://gcmseguros.com.ar';" class="botonPORTA noDark portaTRAVEL">
                                             <p>PROYECTO TRAVEL</p>
                                         </button>
-                                        <button type="button" role="link" onclick="window.location='https://gcmseguros.com.ar';" class="botonPORTA noDark portaBDT">
+                                        <button class='buttonModal modal-card  botonPORTA noDark portaBDT'> 
                                             <p>BDT</p>
                                         </button>
                                         <button type="button" role="link" onclick="window.location='https://gcmseguros.com.ar';" class="botonPORTA noDark portaBBB">
                                             <p>BBB</p>
                                         </button>
-                                        <button type="button" role="link" onclick="window.location='https://gcmseguros.com.ar';" class="botonPORTA noDark portaLAURA">
+                                        <button class='buttonModal modal-card  botonPORTA noDark portaLAURA'> 
                                             <p>PROYECTO LAURA</p>
                                         </button>
-                                        <button type="button" role="link" onclick="window.location='https://gcmseguros.com.ar';" class="botonPORTA noDark portaPHP">
+                                        <button class='buttonModal modal-card  botonPORTA noDark portaPHP'> 
                                             <p>PHP CRUD</p>
                                         </button>
                                     </center>
@@ -236,7 +237,7 @@
                                         <button type="button" role="link" onclick="window.location='https://gcmseguros.com.ar';" class="botonPORTA noDark portaTRAVEL">
                                                     <p>PROYECTO TRAVEL</p>
                                                 </button>
-                                        <button type="button" role="link" onclick="window.location='https://gcmseguros.com.ar';" class="botonPORTA noDark portaGCMSEGUROS">
+                                        <button class='buttonModal modal-card  botonPORTA noDark portaSTONE'> 
                                                     <p>ABM UWU</p>
                                                 </button>
                                         <button type="button" role="link" onclick="window.location='https://gcmseguros.com.ar';" class="botonPORTA noDark portaGCMSEGUROS">
@@ -247,9 +248,9 @@
                             </div>
                         </section>
                     </center>
-                </div>
+                    </div>
             </section>
-        </div>
+            </div>
     </main>
 
 
@@ -362,6 +363,45 @@
     <script src="js/main.js"></script>
     <script src="js/darkMode.js"></script>
     <script src="js/portfolio.js"></script>
+    <script src="js/modal.js"></script>
+
+
+    <!--MODAL-->
+    <div class='modal-CardAlerta'>
+        <div class='modal'>
+
+
+            <h2 class='modal-title naranja'> AVISO!</h2>
+            <div class='modal-content' align="center" style="margin-top: 10px;">
+
+                <p>Este proyecto no esta subido por el momento por que fue creado con el lenguaje de PHP y no podras verlos por que necesitarias la base de datos con la que fue creada.</p>
+
+                <p style="margin-top: 10px;">lo sentimos</p>
+                <p style="margin: 10px 0;">:(</p>
+
+
+                <button class='modal-card modal-button'>
+                    Aceptar
+                </button>
+            </div>
+        </div>
+        <!-- partial -->
+
+        <script>
+            const contentWrapper = document.querySelector('.content-enfocado');
+            const modalWrapper = document.querySelector('.modal-CardAlerta');
+            const modalButtons = document.querySelectorAll('.modal-card');
+
+            modalButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    contentWrapper.classList.toggle('modal--active');
+                    modalWrapper.classList.toggle('modal--active');
+                });
+            });
+        </script>
+
+
+    </div>
 </body>
 
 </html>

@@ -1157,6 +1157,76 @@
     }
     /*FIN DE PORTAFOLIO*/
     /*---------------------------------------------------------------------------------------------------*/
+    /*MODAL*/
+    
+    .desenfoque {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+    
+    .modal--active .desenfoque {
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+    }
+    
+    .modal-CardAlerta {
+        position: fixed;
+        top: 100vh;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+        overflow: auto;
+        opacity: 0;
+        z-index: -500;
+        transition: 0.5s;
+    }
+    
+    .modal-CardAlerta.modal--active {
+        z-index: 500;
+        top: 0px;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+    
+    .modal {
+        position: relative;
+        background: rgb(41, 41, 41);
+        padding: 80px 20px 20px;
+        overflow: hidden;
+        height: 300px;
+        width: 600px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px rgba(34, 34, 34, 0.397);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .modal-title {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        font-size: 3rem;
+    }
+    
+    .modal-button {
+        background-color: var(--naranja);
+        color: #fff;
+        border-radius: 50px;
+        padding: 5px 10px;
+    }
+    
+    .modal-button:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        color: black;
+    }
+    /*---------------------------------------------------------------------------------------------------*/
     /* MEDIAS CON MAX PORTAFOLIO */
     
     @media screen and (max-width: 823px) {
@@ -1184,6 +1254,10 @@
             color: white;
             margin: 20px;
             border-radius: 20px;
+        }
+        .modal {
+            height: auto;
+            width: 90%;
         }
     }
     
@@ -1217,19 +1291,6 @@
             border-radius: 50px;
             margin-top: 15px;
             margin-right: 20px;
-        }
-        .botonPORTA {
-            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgb(0, 0, 0, 0.85) 50%), url(../img/programacion.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            width: 100%;
-            height: 200px;
-            color: white;
-            margin-bottom: 20px;
-            margin-left: -1px;
-            border-radius: 20px;
         }
     }
     

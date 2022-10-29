@@ -53,10 +53,10 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main content-enfocado ">
 
         <!--Home-->
-        <section class="home container" id="inicio">
+        <section class="home container desenfoque" id="inicio">
             <div class="swiper home-swiper">
                 <div class="swiper-wrapper">
 
@@ -117,7 +117,7 @@
         </section>
 
         <!--About-->
-        <section class="section about" id="nosotros">
+        <section class="section about desenfoque" id="nosotros">
             <div class="abcontainer container grid">
                 <img src="img/Proyecto nuevo.png" class="aboutimg " alt="Prufex Pru fex PRU-FEX proyectos proyectos trabajos desarrollo web pagina web">
                 <div class="abdata">
@@ -132,7 +132,7 @@
 
         <!--Product-->
 
-        <section class="section product" id="integrantes">
+        <section class="section product desenfoque" id="integrantes">
 
             <h2 class="stitle">Integrantes</h2>
 
@@ -200,7 +200,7 @@
 
 
         <!--Discount-->
-        <section class="section discount">
+        <section class="section discount desenfoque">
 
             <div class="dscont container grid fondoPro noDark">
 
@@ -217,7 +217,7 @@
         </section>
 
         <!--New-->
-        <section class="section new" id="portafolio">
+        <section class="section new desenfoque" id="portafolio">
             <h2 class="stitle">Algunos
                 <font class="naranja">trabajos</font>
             </h2>
@@ -250,7 +250,9 @@
                             <h3 class="newti">PROYECTO STONE</h3>
                             <span class="newsub">Programa Web</span>
                             <div class="newps">
-                                <a href="#new" class="newdis">Visitar Sitio Web</a>
+                                <button class='buttonModal modal-card newdis ' style="background-color: rgba(0, 0, 0, 0);"> 
+                                Visitar Sitio Web
+                            </button>
                             </div>
                             </button>
                         </div>
@@ -271,9 +273,9 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer ">
 
-        <div class="ftcontainer container grid">
+        <div class="ftcontainer container grid ">
 
             <div class="ftcontent">
 
@@ -378,6 +380,43 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/darkMode.js"></script>
+
+    <!--MODAL-->
+    <div class='modal-CardAlerta'>
+        <div class='modal'>
+
+
+            <h2 class='modal-title naranja'> AVISO!</h2>
+            <div class='modal-content' align="center" style="margin-top: 10px;">
+
+                <p>Este proyecto no esta subido por el momento por que fue creado con el lenguaje de PHP y no podras verlos por que necesitarias la base de datos con la que fue creada.</p>
+
+                <p style="margin-top: 10px;">lo sentimos</p>
+                <p style="margin: 10px 0;">:(</p>
+
+
+                <button class='modal-card modal-button'>
+                        Aceptar
+                    </button>
+            </div>
+        </div>
+        <!-- partial -->
+
+        <script>
+            const contentWrapper = document.querySelector('.content-enfocado');
+            const modalWrapper = document.querySelector('.modal-CardAlerta');
+            const modalButtons = document.querySelectorAll('.modal-card');
+
+            modalButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    contentWrapper.classList.toggle('modal--active');
+                    modalWrapper.classList.toggle('modal--active');
+                });
+            });
+        </script>
+
+
+    </div>
 </body>
 
 </html>

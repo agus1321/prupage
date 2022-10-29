@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Modal with Blur Background Example</title>
+
+    <meta name="author" content="Codeconvey" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" href="css/demo.css" />
+
+</head>
+
+<body>
+
+    <section class="content-enfocado">
+        <div class="rt-container">
+            <div class="col-rt-12">
+                <div class="Scriptcontent">
+
+                    <!-- Main Demo Code Here -->
+                    <!-- partial:index.partial.html -->
+                    <div class='content-enfocado'>
+                        <div class='desenfoque'>
+                            <button class='buttonModal modal-card'>Read More</button>
+                        </div>
+                    </div>
+
+                    <div class='modal-CardAlerta'>
+                        <div class='modal'>
+                            <button class='modal-card modal-button'>x</button>
+                            <h2 class='modal-title'>About Codeconvey</h2>
+                            <div class='modal-content'>
+                                <p class='p'>Codeconvey provide an excellent collection of HTML5, CSS3, Javascript, Jquery and many more creations to help out frontend developers and designers. All of our stuff is free of cost which you can use in your personal or
+                                    commercial projects.</p>
+                            </div>
+                        </div>
+                        <!-- partial -->
+
+                        <script>
+                            const contentWrapper = document.querySelector('.content-enfocado');
+                            const modalWrapper = document.querySelector('.modal-CardAlerta');
+                            const modalButtons = document.querySelectorAll('.modal-card');
+
+                            modalButtons.forEach(button => {
+                                button.addEventListener('click', () => {
+                                    contentWrapper.classList.toggle('modal--active');
+                                    modalWrapper.classList.toggle('modal--active');
+                                });
+                            });
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- Analytics -->
+
+</body>
+
+</html>

@@ -1080,6 +1080,20 @@
     .portaCrispy{
         background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaCrispy.PNG);
     }
+
+    .portaDental{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaDental.PNG);
+    }
+    .portaPrufex{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaPrufex.PNG);
+    }
+    .portaTABY{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaDental.PNG);
+    }
+    .portaMuseum{
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaDental.PNG);
+    }
+
  /* FIN DE IMAGENES DE FOINDO DEL PORTAFOLIO*/
     .botonPORTA {
         background-color: ;

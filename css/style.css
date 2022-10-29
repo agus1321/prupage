@@ -118,6 +118,11 @@
         display: none;
     }
     
+    #al {
+        margin-top: -5rem;
+        display: none;
+    }
+    
     #imgFias {
         box-shadow: 0px 0px 10px var(--btnPort);
         opacity: 1;
@@ -1224,7 +1229,6 @@
         color: #fff;
         border-radius: 50px;
         padding: 5px 10px;
-        margin-top: 50px;
     }
     
     .modal-button:hover {

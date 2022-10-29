@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="es" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -63,7 +65,7 @@
     </header>
 
     <main class="main  content-enfocado ">
-        <div class="swiper home-swiper desenfoque">
+        <div class=" desenfoque">
             <!--NOSOTROS-->
             <br>
             <section id="sq" class="section">
@@ -86,22 +88,24 @@
                             <button type="button" onclick="mostoSol(); activarButtSol();" class="botonPort noDark" id="boton-soler">
                                 <img id="imgSol" src="img/equipo/soler.png" alt="" srcset="" class="noDark">
                             </button>
+                            <button type="button" onclick="mostoAle(); activarButtAle();" class="botonPort noDark" id="boton-ale">
+                                <img id="imgAle" src="img/equipo/vector-sign-of-user-icon.webp" alt="" srcset="" class="noDark">
+                            </button>
                         </div>
 
 
                         <!--------------------------------------------------PORTAFOLIO 1----------------------------------------------------->
 
                         <section class="section product" id="af">
-
                             <div class="portaGente" align="left">
                                 <!--PERSONA-->
-                                <h1 class="tituloPorta">AGUSTIN
+                                <h1 class="tituloPorta" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">AGUSTIN
                                     <font class="naranja">FIASCHE</font>
                                 </h1>
                                 <!--OFICIO-->
-                                <p class="subTituloPorta">Programador / Scrum Master </p>
+                                <p class="subTituloPorta" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">Programador / Scrum Master </p>
                                 <!--LENGUAJES-->
-                                <div class="etiquetasLenguajes" align="center">
+                                <div class="etiquetasLenguajes" align="center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">
                                     <p> HTML5</p>
                                     <p> CSS</p>
                                     <p> JS </p>
@@ -112,7 +116,7 @@
                                     <p> IONIC </p>
                                 </div>
                                 <!--TRABAJOS-->
-                                <div class="Cartelera">
+                                <div class="Cartelera" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1700">
                                     <center>
                                         <button type="button" role="link" onclick="window.location='https://gcmseguros.com.ar';" class="botonPORTA noDark portaGCMSEGUROS">    
                                         <p>GCM SEGUROS</p>
@@ -169,7 +173,7 @@
 
                                 </div>
                                 <!--TRABAJOS-->
-                                <div class="Cartelera">
+                                <div class="Cartelera" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1700">
                                     <center>
                                         <button type="button" role="link" onclick="window.location='https://prufex.com.ar';" class="botonPORTA noDark portaPrufex">
                                             <p>PRUFEX</p>
@@ -225,7 +229,7 @@
                                     <p> JAVA </p>
                                 </div>
                                 <!--TRABAJOS-->
-                                <div class="Cartelera">
+                                <div class="Cartelera" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1700">
                                     <center>
                                         <button type="button" role="link" onclick="window.location='https://briansfarfan.github.io/paginaHomeBeta/index.html';" class="botonPORTA noDark portaDental">
 
@@ -242,6 +246,44 @@
                                                 </button>
                                         <button class='buttonModal modal-card  botonPORTA noDark portaSTONE'> 
                                                     <p>PROYECTO MELTHED</p>
+                                                </button>
+                                    </center>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!--------------------------------------------------PORTAFOLIO 2------------------------------------------------------->
+
+                        <section class="section product" id="al">
+
+                            <div class="portaGente" align="left">
+                                <!--PERSONA-->
+                                <h1 class="tituloPorta">ALEJANDRO
+                                    <font class="naranja">TOLOSA</font>
+                                </h1>
+                                <!--OFICIO-->
+                                <p class="subTituloPorta">Programador</p>
+                                <!--LENGUAJES-->
+                                <div class="etiquetasLenguajes" align="center">
+                                    <p> ANGULAR </p>
+                                    <p> IONIC </p>
+                                    <p> JS </p>
+                                    <p> MySQL </p>
+                                    <p> PYTHON </p>
+                                    <p> JAVA </p>
+                                </div>
+                                <!--TRABAJOS-->
+                                <div class="Cartelera" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1700">
+                                    <center>
+                                        <button type="button" role="link" onclick="window.location='https://briansfarfan.github.io/paginaHomeBeta/index.html';" class="botonPORTA noDark portaDental">
+
+                                                    <p>DENTAL ROJAS</p>
+                                                </button>
+                                        <button class='buttonModal modal-card  botonPORTA noDark portaLAURA'> 
+                                                    <p>PROYECTO LAURA</p>
+                                                </button>
+                                        <button type="button" role="link" onclick="window.location='https://gcmseguros.com.ar';" class="botonPORTA noDark portaTRAVEL">
+                                                    <p>PROYECTO TRAVEL</p>
                                                 </button>
                                     </center>
                                 </div>
@@ -364,8 +406,10 @@
     <script src="js/darkMode.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/modal.js"></script>
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!--MODAL-->
     <div class='modal-CardAlerta' id="Modalote">
         <div class='modal'>

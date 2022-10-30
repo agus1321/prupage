@@ -11,6 +11,7 @@
         --scroll: rgb(167, 167, 167);
         --btnPort: rgb(6, 167, 241);
         --portgrad: rgba(6, 167, 241, 0.5);
+        --SoLuna: rotate(540deg);
     }
     
     [data-theme="dark"] {
@@ -21,6 +22,7 @@
         --fondoScroll: rgba(23, 23, 32);
         --scroll: #272525;
         --btnPort: #f9580e;
+        --SoLuna: rotate(0deg)
     }
     
     .naranja {
@@ -29,6 +31,8 @@
     
     .BtnDarkLight {
         filter: var(--boton);
+        transition: 1s;
+        transform: var(--SoLuna);
     }
     
     * {

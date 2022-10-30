@@ -1095,7 +1095,7 @@
     }
     
     .portaCrispy {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaCrispy.PNG);
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaCrispy.webp);
     }
     /* -------------- */
     
@@ -1128,7 +1128,7 @@
     }
     
     .portaTRAVEL {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaTRAVEL.png);
+        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaTravel.webp);
     }
     
     .portaMuseum {

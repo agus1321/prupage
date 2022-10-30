@@ -1302,9 +1302,9 @@
             margin-top: 15px;
             margin-right: 20px;
         }
-    }
-    
-    @media screen and (max-width: 453px) {
+        #tituloModal {
+            font-size: 1.8rem;
+        }
         .tituloPorta {
             font-size: 2.1rem;
         }

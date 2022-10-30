@@ -149,6 +149,7 @@
                 const contentWrapper = document.querySelector('.content-enfocado');
                 const modalWrapper = document.querySelector('.modal-CardAlerta');
                 const modalButtons = document.querySelectorAll('.Enviar');
+
                 const serviceID = 'default_service';
                 const templateID = 'template_hogjrcq';
                 emailjs.sendForm(serviceID, templateID, this)
@@ -158,7 +159,13 @@
                         btn.value = 'Send Email';
                     }, (err) => {
                         btn.value = 'Send Email';
-                        alert(JSON.stringify(err));
+                        contentWrapper.classList.toggle('modal--active');
+                        modalWrapper.classList.toggle('modal--active');
+                        /*alert(JSON.stringify(err) + " " + " ERROR)");*/
+                        document.getElementById("tituloModal").innerHTML = "ERROR :(";
+                        document.getElementById("contModalError1").innerHTML = "Hubo en error en el envio, porfavor vuelve a intentarlo mas tarde..";
+                        document.getElementById("contModalError2").innerHTML = "Puedes comunicarte con nosotros usando WhatsApp";
+                        document.getElementById("contModalError3").innerHTML = "Que un error NO detenga la creacion de tu pagina web!";
                     });
             });
     </script>
@@ -171,10 +178,11 @@
     <!--MODAL-->
     <div class='modal-CardAlerta' id="Modalote">
         <div class='modal' align="center">
-            <h2 class='modal-title naranja'>ENVIADO!</h2>
+            <h2 class='modal-title naranja' id="tituloModal">ENVIADO!</h2>
             <div class='modal-content' style="margin-top: 10px;">
-                <p style="margin-top:10px ;">Tu mensaje ha sido enviado correctamente. :D</p>
-                <p style="margin-top: 10px;">Pronto recibiras un mail en tu correo donde podremos estar en contacto.</p>
+                <p style="margin-top:10px ;" id="contModalError1">Tu mensaje ha sido enviado correctamente. :D</p>
+                <p style="margin-top: 10px;" id="contModalError2">Pronto recibiras un mail en tu correo donde podremos estar en contacto.</p>
+                <p id="contModalError3" style="margin-top: 15px;"></p>
             </div>
             <button class='modal-button' style="margin-top: 50px;" onclick="location.reload()">
                 Aceptar
